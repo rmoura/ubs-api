@@ -29,6 +29,7 @@ end
 
 group :development, :production do
   # Swagger API Documentation
+  gem 'rspec'
   gem 'open_api-rswag'
 end
 
