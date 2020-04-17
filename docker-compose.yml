@@ -1,0 +1,44 @@
+version: '3.4'
+
+volumes:
+  gems-data:
+    driver: local
+  postgres-data:
+    driver: local
+
+services:
+  base: &base
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: ubs:latest
+    env_file: .env
+    stdin_open: true
+    tty: true
+    volumes:
+      - .:/usr/src/app
+      - gems-data:/usr/src/app/.gems
+    depends_on:
+      - db
+
+  app:
+    <<: *base
+    command: rails server -b 0.0.0.0
+    ports:
+      - '3000:3000'
+
+  specs:
+    <<: *base
+    container_name: ubs.specs
+    command: /bin/sh -c "rails db:test:prepare && bundle exec rspec spec"
+    env_file: .env.test
+
+  db:
+    hostname: db
+    container_name: ubs.db
+    image: postgres:10.3-alpine
+    volumes:
+      - postgres-data:/var/lib/postgresql/data/
+    environment:
+      POSTGRESQL_USER: postgres
+      POSTGRESQL_PASSWORD: heroku
