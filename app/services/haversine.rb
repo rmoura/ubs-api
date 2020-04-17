@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Calculation for distance between two points
 # Reference: https://pt.wikipedia.org/wiki/F%C3%B3rmula_de_Haversine
 

@@ -1,14 +1,16 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 describe UbsFile do
   before do
     allow(Net::HTTP).to receive(:get).and_return(
-      File.read(File.join(Rails.root, 'spec/support/sample_file.csv'))
+      File.read(Rails.root.join('spec/support/sample_file.csv'))
     )
   end
 
   describe '#download' do
-    it { expect(UbsFile.download).to be_a_kind_of(UbsFile)}
+    it { expect(UbsFile.download).to be_a_kind_of(UbsFile) }
     it { expect(UbsFile.download).to have_attributes(path: start_with('/tmp/')) }
   end
 

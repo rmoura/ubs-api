@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module V1
   class EstablishmentsController < ApplicationController
     REGEX_VALID_AXIS = /\A[-+]?\d+(?:.\d+)?\Z/

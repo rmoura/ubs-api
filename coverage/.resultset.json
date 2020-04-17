@@ -3,6 +3,8 @@
     "coverage": {
       "/home/rmoura/projetos/testes/bionexo/ubs/app/controllers/application_controller.rb": {
         "lines": [
+          null,
+          null,
           1,
           1,
           null,
@@ -14,6 +16,8 @@
       },
       "/home/rmoura/projetos/testes/bionexo/ubs/app/controllers/concerns/serializable.rb": {
         "lines": [
+          null,
+          null,
           1,
           1,
           null,
@@ -25,6 +29,8 @@
       },
       "/home/rmoura/projetos/testes/bionexo/ubs/app/controllers/v1/establishments_controller.rb": {
         "lines": [
+          null,
+          null,
           1,
           1,
           1,
@@ -63,6 +69,8 @@
       },
       "/home/rmoura/projetos/testes/bionexo/ubs/app/models/concerns/active_record_extension.rb": {
         "lines": [
+          null,
+          null,
           1,
           1,
           1,
@@ -79,6 +87,8 @@
       },
       "/home/rmoura/projetos/testes/bionexo/ubs/app/models/concerns/paginatable.rb": {
         "lines": [
+          null,
+          null,
           1,
           1,
           null,
@@ -90,6 +100,8 @@
       },
       "/home/rmoura/projetos/testes/bionexo/ubs/app/models/establishment.rb": {
         "lines": [
+          null,
+          null,
           1,
           1,
           1,
@@ -102,6 +114,8 @@
       },
       "/home/rmoura/projetos/testes/bionexo/ubs/app/models/application_record.rb": {
         "lines": [
+          null,
+          null,
           1,
           1,
           null
@@ -109,6 +123,8 @@
       },
       "/home/rmoura/projetos/testes/bionexo/ubs/app/serializers/collection_serializer.rb": {
         "lines": [
+          null,
+          null,
           1,
           1,
           null,
@@ -130,12 +146,16 @@
           null,
           1,
           5,
+          null,
+          null,
           null,
           null
         ]
       },
       "/home/rmoura/projetos/testes/bionexo/ubs/app/serializers/v1/establishment_serializer.rb": {
         "lines": [
+          null,
+          null,
           1,
           1,
           1,
@@ -157,12 +177,16 @@
       },
       "/home/rmoura/projetos/testes/bionexo/ubs/app/serializers/application_serializer.rb": {
         "lines": [
+          null,
+          null,
           1,
           null
         ]
       },
       "/home/rmoura/projetos/testes/bionexo/ubs/app/services/haversine.rb": {
         "lines": [
+          null,
+          null,
           null,
           null,
           null,
@@ -200,6 +224,8 @@
       },
       "/home/rmoura/projetos/testes/bionexo/ubs/app/services/ubs_file.rb": {
         "lines": [
+          null,
+          null,
           1,
           1,
           1,
@@ -236,6 +262,8 @@
       },
       "/home/rmoura/projetos/testes/bionexo/ubs/app/jobs/application_job.rb": {
         "lines": [
+          null,
+          null,
           0,
           null,
           null,
@@ -248,6 +276,6 @@
         }
       }
     },
-    "timestamp": 1587132270
+    "timestamp": 1587140641
   }
 }

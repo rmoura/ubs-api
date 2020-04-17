@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
@@ -13,7 +15,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 gem 'rack-cors'
 
 group :development, :test do
-  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'pry'
   gem 'rubocop-rails'
   gem 'fx', '~> 0.5.0'
@@ -38,7 +40,7 @@ gem 'active_model_serializers', '~> 0.10.10'
 gem 'kaminari', '~> 1.2.0'
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
 # Swagger API Documentation
 gem 'open_api-rswag'

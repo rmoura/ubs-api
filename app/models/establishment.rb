@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Establishment < ApplicationRecord
   include ActiveRecordExtension::Relation
   include Paginatable

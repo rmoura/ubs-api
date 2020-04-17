@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module V1
   class EstablishmentSerializer < ApplicationSerializer
     attributes :id, :name, :address, :number, :neighborhood,

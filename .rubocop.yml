@@ -1,0 +1,91 @@
+require: rubocop-rails
+
+Bundler/OrderedGems:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/MutableConstant:
+  Enabled: false
+
+Style/FormatStringToken:
+  Enabled: false
+
+Style/FormatString:
+  Enabled: false
+
+Layout/LineLength:
+  Enabled: true
+  Max: 85
+  Exclude:
+    - "config/environments/production.rb"
+    - "config/initializers/backtrace_silencers.rb"
+    - "config/initializers/cors.rb"
+    - "config/initializers/rswag-ui.rb"
+    - "config/initializers/rswag_api.rb"
+    - "config/initializers/wrap_parameters.rb"
+    - "db/seeds.rb"
+    - "spec/swagger_helper.rb"
+    - "spec/rails_helper.rb"
+    - "spec/spec_helper.rb"
+
+Style/MultilineIfModifier:
+  Enabled: false
+
+Rails/HelperInstanceVariable:
+  Enabled: true
+  Exclude:
+    - "app/serializers/collection_serializer.rb"
+
+Layout/HashAlignment:
+  Enabled: false
+
+Layout/SpaceInsideArrayLiteralBrackets:
+  Enabled: false
+
+Lint/UselessAssignment:
+  Enabled: false
+
+Rails/Output:
+  Enabled: true
+  Exclude:
+    - "bin/setup"
+
+Layout/ExtraSpacing:
+  Enabled: false
+
+Layout/ArgumentAlignment:
+  Enabled: false
+
+Metrics/MethodLength:
+  Enabled: true
+  Exclude:
+    - "db/migrate/20200411150654_create_establishments.rb"
+
+Style/NumericLiterals:
+  Enabled: false
+
+Metrics/BlockLength:
+  Enabled: true
+  Exclude:
+    - "lib/tasks/establishments.rake"
+    - "spec/controllers/v1/establishments_controller_spec.rb"
+    - "spec/integration/establishments_spec.rb"
+    - "spec/models/concerns/active_record_externsion_spec.rb"
+    - "spec/serializers/collection_serializer_spec.rb"
+    - "spec/swagger_helper.rb"
+
+Naming/FileName:
+  Enabled: true
+  Exclude:
+    - "config/initializers/rswag-ui.rb"
+
+Style/ArrayJoin:
+  Enabled: false
+
+Style/IfUnlessModifier:
+  Enabled: false
+
+Style/BlockComments:
+  Enabled: false

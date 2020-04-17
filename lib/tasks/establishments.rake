@@ -1,15 +1,17 @@
-namespace :establishments do
-  desc "Load data from basic health units in Brazil"
-  task :load => :environment do
-    Rails.logger.info "[rake establishments:load] Starting!"
+# frozen_string_literal: true
 
-    Rails.logger.info "[rake establishments:load] Downloading in CSV..."
+namespace :establishments do
+  desc 'Load data from basic health units in Brazil'
+  task load: :environment do
+    Rails.logger.info '[rake establishments:load] Starting!'
+
+    Rails.logger.info '[rake establishments:load] Downloading in CSV...'
     datafile = UbsFile.download
 
-    Rails.logger.info "[rake establishments:load] Transforming to data object..."
+    Rails.logger.info '[rake establishments:load] Transforming to data object...'
     data = datafile.transform!
 
-    Rails.logger.info "[rake establishments:load] Loading data in database..."
+    Rails.logger.info '[rake establishments:load] Loading data in database...'
     data.each do |row|
       row = row.to_hash
 
@@ -30,6 +32,6 @@ namespace :establishments do
       )
     end
 
-    Rails.logger.info "[rake establishments:load] Successfully concluded!"
+    Rails.logger.info '[rake establishments:load] Successfully concluded!'
   end
 end

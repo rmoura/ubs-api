@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module ActiveRecordExtension
   module Relation
     extend ActiveSupport::Concern

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class CollectionSerializer
   attr_reader :relation, :serializer
 
@@ -6,7 +8,7 @@ class CollectionSerializer
     @serializer = serializer
   end
 
-  def as_json(*args)
+  def as_json(*)
     {
       current_page:  relation.current_page,
       per_page:      relation.limit_value,
@@ -18,6 +20,8 @@ class CollectionSerializer
   private
 
   def entries
-    ActiveModelSerializers::SerializableResource.new(relation, each_serializer: serializer)
+    ActiveModelSerializers::SerializableResource.new(
+      relation, each_serializer: serializer
+    )
   end
 end
