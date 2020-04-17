@@ -37,7 +37,7 @@ USER docker-user
 # Most of the gems are being updated to fix the deprecations from Ruby 2.7
 ENV RUBYOPT '-W:no-deprecated -W:no-experimental'
 
-#ENV RAILS_ENV 'production'
+ENV RAILS_ENV 'production'
 
 # Run the app.  CMD is required to run on Heroku
 # $PORT is set by Heroku
