@@ -1,0 +1,122 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "API V1",
+    "version": "v1"
+  },
+  "paths": {
+    "/find_ubs?query={coordinates}&page={page}&per_page={per_page}": {
+      "get": {
+        "summary": "Find UBS",
+        "tags": [
+          "Establishments"
+        ],
+        "parameters": [
+          {
+            "name": "coordinates",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "per_page",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "page",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Ordered establishments",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "current_page": {
+                      "type": "integer",
+                      "example": 1
+                    },
+                    "per_page": {
+                      "type": "integer",
+                      "example": 10
+                    },
+                    "total_entries": {
+                      "type": "integer",
+                      "example": 39767
+                    },
+                    "entries": {
+                      "type": "array",
+                      "example": [
+                        {
+                          "id": 1,
+                          "name": "UBS REAL PQ PAULO MANGABEIRA",
+                          "address": "RUA BARAO MELGACO",
+                          "number": "S/N",
+                          "neighborhood": "Centro",
+                          "city": "São Paulo",
+                          "uf": "SP",
+                          "phone": "011 37582329",
+                          "geocode": {
+                            "lat": -23.6099946498864,
+                            "long": -46.7057347297655
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Invalid request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errors": {
+                      "type": "string",
+                      "example": "Invalid coordinates!"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "servers": [
+    {
+      "url": "https://{heroku}",
+      "variables": {
+        "heroku": {
+          "default": "rmoura-ubs-api.herokuapp.com"
+        }
+      }
+    },
+    {
+      "url": "http://{localhost}",
+      "variables": {
+        "localhost": {
+          "default": "localhost:3000"
+        }
+      }
+    }
+  ]
+}
