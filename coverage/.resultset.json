@@ -1,0 +1,253 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/home/rmoura/projetos/testes/bionexo/ubs/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          2,
+          null,
+          null
+        ]
+      },
+      "/home/rmoura/projetos/testes/bionexo/ubs/app/controllers/concerns/serializable.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          4,
+          null,
+          null
+        ]
+      },
+      "/home/rmoura/projetos/testes/bionexo/ubs/app/controllers/v1/establishments_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          3,
+          null,
+          null,
+          null,
+          3,
+          null,
+          null,
+          1,
+          null,
+          1,
+          23,
+          null,
+          null,
+          1,
+          8,
+          null,
+          9,
+          null,
+          5,
+          8,
+          null,
+          null,
+          1,
+          3,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/rmoura/projetos/testes/bionexo/ubs/app/models/concerns/active_record_extension.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          2,
+          2,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/rmoura/projetos/testes/bionexo/ubs/app/models/concerns/paginatable.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          12,
+          null,
+          null
+        ]
+      },
+      "/home/rmoura/projetos/testes/bionexo/ubs/app/models/establishment.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/home/rmoura/projetos/testes/bionexo/ubs/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/home/rmoura/projetos/testes/bionexo/ubs/app/serializers/collection_serializer.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          8,
+          8,
+          null,
+          null,
+          1,
+          null,
+          5,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          5,
+          null,
+          null
+        ]
+      },
+      "/home/rmoura/projetos/testes/bionexo/ubs/app/serializers/v1/establishment_serializer.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          4,
+          null,
+          null,
+          1,
+          null,
+          4,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/rmoura/projetos/testes/bionexo/ubs/app/serializers/application_serializer.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/rmoura/projetos/testes/bionexo/ubs/app/services/haversine.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          4,
+          3,
+          null,
+          1,
+          5,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          1,
+          5,
+          null,
+          null,
+          1,
+          3,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/rmoura/projetos/testes/bionexo/ubs/app/services/ubs_file.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          5,
+          null,
+          null,
+          1,
+          5,
+          null,
+          5,
+          5,
+          5,
+          null,
+          5,
+          null,
+          null,
+          1,
+          3,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/rmoura/projetos/testes/bionexo/ubs/app/jobs/application_job.rb": {
+        "lines": [
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0
+        ],
+        "branches": {
+        }
+      }
+    },
+    "timestamp": 1587123147
+  }
+}
