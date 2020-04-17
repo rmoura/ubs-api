@@ -49,6 +49,18 @@ A análise de cobertura de testes é atualizado assim que os testes são executa
 O deploy está sobre o serviço do Heroku com Docker.
 Cada push ao Github é acionado o Github Actions. O workflow desenhado é, executar os testes automatizados desenvolvidos, validar o build e aí então realizar o deploy automaticamente no Heroku.
 
+Para atualizar os dados de UBS no banco de dados, basta executar a seguinte rake task:
+
+```
+$ bundle exec rake establishments:load
+```
+
+ou
+
+```
+$ heroku run rake establishments:load
+```
+
 Esta API foi desenvolvida utilizando Ruby 2.7, Rails 6.0.2.2 e PostgreSQL 11.
 
 Para os testes unitários o RSpec.
