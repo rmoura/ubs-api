@@ -42,7 +42,7 @@ jobs:
         RAILS_ENV=test bundle exec rake db:drop
         RAILS_ENV=test bundle exec rake db:create
         RAILS_ENV=test bundle exec rake db:migrate
-        CSV_URL=${{ secrets.CSV_URL }}
+        CSV_URL='${{ secrets.CSV_URL }}'
         bundle exec rspec
     - name: Login to Heroku Container registry
       env:
