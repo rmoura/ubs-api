@@ -26,10 +26,12 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
-group :development, :production do
+group :test, :development, :production do
   # Swagger API Documentation
   gem 'rspec'
   gem 'open_api-rswag'
+
+  # Generate migration to functions and triggers
   gem 'fx', '~> 0.5.0'
 end
 
