@@ -18,6 +18,6 @@ class CollectionSerializer
   private
 
   def entries
-    ActiveModel::SerializableResource.new(relation, each_serializer: serializer)
+    ActiveModelSerializers::SerializableResource.new(relation, each_serializer: serializer)
   end
 end
