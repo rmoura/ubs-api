@@ -18,7 +18,6 @@ group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'pry'
   gem 'rubocop-rails'
-  gem 'fx', '~> 0.5.0'
 end
 
 group :development do
@@ -31,6 +30,7 @@ group :development, :production do
   # Swagger API Documentation
   gem 'rspec'
   gem 'open_api-rswag'
+  gem 'fx', '~> 0.5.0'
 end
 
 group :test do
